@@ -1,0 +1,54 @@
+/* ExpertConnect.css */
+.expert-card {
+    transition: box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  
+  .expert-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .expert-image {
+    height: 240px;
+    object-fit: cover;
+  }
+  
+  .star-icon {
+    width: 16px;
+    height: 16px;
+    color: #ffc107;
+    fill: currentColor;
+  }
+  
+  .specialty-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    background-color: #e0e7ff;
+    color: #4f46e5;
+    border-radius: 9999px;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4338ca;
+    border-color: #4338ca;
+  }
+  
+  .btn-outline-primary {
+    color: #4f46e5;
+    border-color: #4f46e5;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+  }

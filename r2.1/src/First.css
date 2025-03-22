@@ -1,0 +1,31 @@
+
+*{
+ box-sizing: border-box;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.first{
+    grid-column: 1/4;
+    background-color: rgb(25,142,255);
+    height: 100vh;
+}
+.second{
+    grid-column: 4/6;
+    background-color: rgb(255, 255, 255);
+}
+.size{
+    font-weight: 700;
+    font-size: 4rem;
+}
+p,h1{
+    color: white;
+}
+.height{
+    margin-top: 250px;
+}
+img{
+    margin-top: 120px;
+}

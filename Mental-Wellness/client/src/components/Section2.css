@@ -1,0 +1,61 @@
+/* Section2.css */
+.feature-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-box i {
+    font-size: 24px;
+    color: white;
+}
+
+.green-bg { background-color: #4ade80; }
+.blue-bg { background-color: #60a5fa; }
+.purple-bg { background-color: #a78bfa; }
+.orange-bg { background-color: #fb923c; }
+.pink-bg { background-color: #fb7185; }
+.teal-bg { background-color: #2dd4bf; }
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1f2937;
+}
+
+.feature-card p {
+    color: #6b7280;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.learn-more {
+    color: #4ade80;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+    color: #22c55e;
+    text-decoration: none;
+}

@@ -1,0 +1,29 @@
+.content{
+    margin-left: 80px;
+    width: 300px;
+}
+img{
+    margin-left: 50px;
+}
+.price{
+    /* color: aliceblue; */
+    position: relative;
+    left:100px;
+}
+.shirt{
+    height: 150px;
+    margin-left: 70px;
+}
+.btn{
+    width: 50px;
+    /* margin-top: 5px; */
+    /* position: relative; */
+    left:110px;
+    top:10px;
+}
+.cart{
+    height:30px;
+}
+.cartlogo{
+    margin-bottom: 2px;
+}

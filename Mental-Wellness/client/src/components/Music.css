@@ -1,0 +1,149 @@
+/* MusicCard.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.app-container {
+  min-height: 100vh;
+  background-color: #1E1B2E;
+  color: white;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #8B7FFF;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.sound-icon {
+  transform: rotate(180deg);
+}
+
+.app-description {
+  color: #B4B4B4;
+  font-size: 1.125rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .tracks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tracks-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.track-card {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.track-card:hover {
+  transform: translateY(-4px);
+}
+
+.track-image {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.track-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.track-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.track-description {
+  color: #B4B4B4;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.track-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.info-item {
+  font-size: 0.875rem;
+}
+
+.info-label {
+  color: #B4B4B4;
+  margin-right: 0.25rem;
+}
+
+.info-value {
+  color: white;
+}
+
+.play-button {
+  width: 3rem;
+  height: 3rem;
+  background-color: #8B7FFF;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.play-button:hover {
+  background-color: #7A6DFF;
+}
+
+.play-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+}

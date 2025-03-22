@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(180,53,121);
+}
+form{
+    background-color: rgb(255,255,255);
+}
+label{
+    min-width: max-content;
+}

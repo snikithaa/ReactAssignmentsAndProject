@@ -1,0 +1,337 @@
+/* Section1.css */
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .landing-page {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f0f4ff, #e6e9ff);
+    overflow: hidden;
+  }
+  
+  /* Greeting Box */
+  .greeting-box {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    background: transparent;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* z-index: 1000; */
+  }
+  
+  .greeting-text {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #4a5568;
+  }
+  
+  .user-name {
+    color: #4f46e5;
+    font-weight: 600;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #4f46e5, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #4f46e5;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 40px;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2d3748;
+  }
+  
+  .highlight {
+    color: #4f46e5;
+  }
+  
+  .hero-subtext {
+    font-size: 18px;
+    color: #4a5568;
+    margin: 20px 0;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border: 2px solid #4f46e5;
+    color: #4f46e5;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-outline:hover {
+    background: rgba(79, 70, 229, 0.1);
+  }
+  
+  /* Hero Animation */
+  .hero-animation {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .animation-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #4f46e5;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: pulse 4s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(0.9); opacity: 0.1; }
+    50% { transform: scale(1.1); opacity: 0.2; }
+    100% { transform: scale(0.9); opacity: 0.1; }
+  }
+  
+  /* Scroll Indicator */
+  .scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #4a5568;
+  }
+  
+  .scroll-icon {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    padding: 80px 40px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+  }
+  
+  .section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .testimonial-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    position: relative;
+  }
+  
+  .testimonial-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .avatar-badge {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background: #4f46e5;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .testimonial-quote {
+    font-size: 18px;
+    color: #4a5568;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-role {
+    font-size: 16px;
+    color: #4f46e5;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .slider-button {
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .slider-button:hover {
+    background: #f0f4ff;
+  }
+  
+  .slider-dots {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #cbd5e0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .slider-dot.active {
+    background: #4f46e5;
+  }
+
+  @media (max-width: 768px) {
+    .hero-animation {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-heading {
+      font-size: 1.5rem; /* Adjust as needed */
+    }
+  
+    .hero-subtext {
+      font-size: 1rem; /* Adjust as needed */
+    }
+  
+    .hero-buttons button {
+      font-size: 0.9rem; /* Make buttons text smaller */
+      padding: 8px 16px; /* Reduce button padding */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .greeting-text {
+      font-size: 1rem; /* Reduce font size for mobile */
+    }
+  
+    .user-name {
+      font-size: 1.1rem; /* Slightly larger for emphasis */
+    }
+  
+    .greeting-box {
+      padding: 8px 12px; /* Reduce padding for better spacing */
+    }
+  }
+  
+  
